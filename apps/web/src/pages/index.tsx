@@ -1,10 +1,14 @@
+import { api } from "@/utils/api";
 
 export default function IndexPage() {
+
+    const useQuery = api.hello.greeting.useQuery()
+
     return(
         <>
         
             <div>
-                Hello
+                {useQuery.data}
             </div>
         </>
     )
