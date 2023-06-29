@@ -2,10 +2,13 @@ import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, Io
 import { useParams } from 'react-router';
 import ExploreContainer from '../components/ExploreContainer';
 import './Page.css';
-
+import { api } from '../utils/api';
 const Page: React.FC = () => {
 
   const { name } = useParams<{ name: string; }>();
+
+
+  const useQuery = api.hello.greeting.useQuery() 
 
   return (
     <IonPage>
