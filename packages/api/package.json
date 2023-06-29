@@ -1,0 +1,28 @@
+{
+  "name": "api",
+  "description": "",
+  "version": "0.1.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trpc/client": "^10.33.0",
+    "@trpc/server": "^10.33.0",
+    "superjson": "^1.12.4",
+    "zod": "^3.21.4",
+    "db": "workspace:*"
+
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "typescript": "^5.1.3"
+  }
+}

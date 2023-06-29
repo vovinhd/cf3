@@ -1,0 +1,8 @@
+{
+  "name": "ClimateFriday",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite",
+  "id": "910cd1c7"
+}
