@@ -1,3 +1,5 @@
+import React from 'react';
+import { api } from '../utils/api';
 import './ExploreContainer.css';
 
 interface ContainerProps {
@@ -5,10 +7,11 @@ interface ContainerProps {
 }
 
 const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
+  const useQuery = api.hello.personalizedGreeting.useQuery(name) 
+
   return (
     <div id="container">
-      <strong>{name}</strong>
-      <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      {useQuery.data}
     </div>
   );
 };
