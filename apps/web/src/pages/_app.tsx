@@ -4,6 +4,7 @@ import type { ReactElement, ReactNode } from 'react';
 
 import { api } from '@/utils/api';
 import { DefaultLayout } from '@/components/DefaultLayout';
+import '../styles/globals.css';
 
 export type NextPageWithLayout<
   TProps = Record<string, unknown>,
