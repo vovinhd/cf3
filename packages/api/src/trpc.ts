@@ -11,7 +11,7 @@ import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
 import superjson from "superjson";
 import { ZodError } from "zod";
 
-// import { prisma } from "db"
+import { prisma } from "db"
 
 /**
  * 1. CONTEXT
@@ -38,7 +38,7 @@ import { ZodError } from "zod";
 const createInnerTRPCContext = () => {
   return {
     // session: opts.session,
-    // prisma,
+    prisma,
   };
 };
 
